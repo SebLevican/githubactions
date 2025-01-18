@@ -31,4 +31,7 @@ jobs:
 
       # Step 4: Run tests
       - name: Run tests
+        env:
+          PYTHONPATH: ${{ github.workspace }}
         run: pytest
+        
